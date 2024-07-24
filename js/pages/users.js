@@ -7,7 +7,7 @@ export default class Users extends HTMLElement {
         <h1>Users</h1>
         <ul>
           ${userList
-            .map(e => `<li><a route="/users/${e.id}">${e.name}</a></li>`)
+            .map((e) => `<li><a route="/users/${e.id}">${e.name}</a></li>`)
             .join("")}
         </ul>
       </div>
@@ -15,4 +15,4 @@ export default class Users extends HTMLElement {
   }
 }
 
-customElements.define("wc-users", Users);
+customElements.define("my-users", Users);

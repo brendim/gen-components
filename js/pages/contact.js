@@ -8,4 +8,4 @@ export default class ContactUs extends HTMLElement {
   }
 }
 
-customElements.define("wc-contact", ContactUs);
+customElements.define("my-contact", ContactUs);

@@ -8,7 +8,7 @@ export default class UserDetails extends HTMLElement {
   connectedCallback() {
     const id = this.getAttribute("id");
     if (id && id !== null) {
-      const user = userList.find(e => e.id === parseInt(id)) || {};
+      const user = userList.find((e) => e.id === parseInt(id)) || {};
       this.innerHTML = `
         <div class="page">
           <h1>User Details</h1>
@@ -19,4 +19,4 @@ export default class UserDetails extends HTMLElement {
   }
 }
 
-customElements.define("wc-userdetails", UserDetails);
+customElements.define("my-userdetails", UserDetails);

@@ -8,4 +8,4 @@ export default class AboutUs extends HTMLElement {
   }
 }
 
-customElements.define("wc-about", AboutUs);
+customElements.define("my-about", AboutUs);

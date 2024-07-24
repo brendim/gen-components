@@ -8,4 +8,4 @@ export default class Home extends HTMLElement {
   }
 }
 
-customElements.define("wc-home", Home);
+customElements.define("my-home", Home);

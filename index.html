@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <wc-router>
+    <my-router>
       <nav class="nav">
         <ul>
           <li><a route="/">Home</a></li>
@@ -22,23 +22,22 @@
           <li><a route="/misc">Misc</a></li>
         </ul>
       </nav>
-      <wc-route path="/" title="Home" component="wc-home"></wc-route>
-      <wc-route path="/about" title="About Us" component="wc-about"></wc-route>
-      <wc-route
+      <my-route path="/" title="Home" component="my-home"></my-route>
+      <my-route path="/about" title="About Us" component="my-about"></my-route>
+      <my-route
         path="/contact"
         title="Contact Us"
-        component="wc-contact"
-        resourceUrl="/js/pages/contact.js"
-      ></wc-route>
-      <wc-route path="/users" title="Users" component="wc-users"></wc-route>
-      <wc-route
+        component="my-contact"
+      ></my-route>
+      <my-route path="/users" title="Users" component="my-users"></my-route>
+      <my-route
         path="/users/:id"
         title="User Details"
-        component="wc-userdetails"
-      ></wc-route>
-      <wc-route path="*" title="404" component="wc-notfound"></wc-route>
-      <wc-outlet></wc-outlet>
-    </wc-router>
+        component="my-userdetails"
+      ></my-route>
+      <my-route path="*" title="404" component="my-notfound"></my-route>
+      <my-outlet></my-outlet>
+    </my-router>
     <script type="module" src="./js/router.js"></script>
     <script type="module" src="./js/pages/index.js"></script>
   </body>
