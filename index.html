@@ -16,13 +16,20 @@
       <nav class="nav">
         <ul>
           <li><a route="/">Home</a></li>
+
           <li><a route="/about/">About</a></li>
           <li><a route="/contact/">Contact</a></li>
           <li><a route="/users">Users</a></li>
-          <li><a route="/misc">Misc</a></li>
+          <li><a route="/formcomponents">Componentes formulario</a></li>
         </ul>
       </nav>
       <my-route path="/" title="Home" component="my-home"></my-route>
+
+      <my-route
+        path="/formcomponents"
+        title="Form component"
+        component="my-formcomponents"
+      ></my-route>
       <my-route path="/about" title="About Us" component="my-about"></my-route>
       <my-route
         path="/contact"
@@ -30,15 +37,18 @@
         component="my-contact"
       ></my-route>
       <my-route path="/users" title="Users" component="my-users"></my-route>
+
       <my-route
         path="/users/:id"
         title="User Details"
         component="my-userdetails"
       ></my-route>
+
       <my-route path="*" title="404" component="my-notfound"></my-route>
       <my-outlet></my-outlet>
     </my-router>
     <script type="module" src="./js/router.js"></script>
     <script type="module" src="./js/pages/index.js"></script>
+    <script type="module" src="./js/components/form/inputField.js"></script>
   </body>
 </html>
