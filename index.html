@@ -10,6 +10,7 @@
     <meta name="theme-color" content="#FF00FF" />
     <title>Router</title>
     <link rel="stylesheet" href="./css/style.css" />
+
   </head>
   <body>
     <my-router>
@@ -30,7 +31,8 @@
         title="Form component"
         component="my-formcomponents"
       ></my-route>
-      <my-route path="/about" title="About Us" component="my-about"></my-route>
+      <my-route path="/about" title="About Us" component="my-about">
+      </my-route>
       <my-route
         path="/contact"
         title="Contact Us"
@@ -50,5 +52,6 @@
     <script type="module" src="./js/router.js"></script>
     <script type="module" src="./js/pages/index.js"></script>
     <script type="module" src="./js/components/form/inputField.js"></script>
+    <script type="module" src="./js/components/buton/button.js"></script>
   </body>
 </html>

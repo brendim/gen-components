@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #7949FF;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,3 +39,5 @@ body {
 .page {
   padding: 10px;
 }
+
+
